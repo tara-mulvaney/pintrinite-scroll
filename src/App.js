@@ -2,22 +2,26 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import PinData from './PinData.json';
+import PinImage from './components/PinImage/PinImage.jsx';
 
-function App() {
-  return (
-    <div className="App">
-      <div className="pins">
-        {PinData.map(pin => {
-          return (
-            <>
-              <h4>{pin.name}</h4>
-              <p>{pin.description}</p>
-            </>
-          )
-        }) }
-      </div>
-    </div>
-  );
+
+class App extends React.Component {
+  render() {
+    return (
+      <>
+        <div>
+          {PinData.map(pin => {
+            return (
+              <div className="pin">
+                <PinImage/>
+              </div>
+            )
+          }) }
+        </div>
+      </>
+      )
+  }
+
 }
 
 export default App;
