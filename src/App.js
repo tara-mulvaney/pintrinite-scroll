@@ -1,5 +1,4 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import PinData from './PinData.json';
 import PinImage from './components/PinImage/PinImage.jsx';
@@ -70,7 +69,7 @@ handleHeartToggle(pin) {
           onDetailsClick={this.handleDetailsClick}
           />
 
-      
+
       </div>
       </div>
       )

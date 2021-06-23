@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import PinRow from '../PinRow/PinRow.jsx'
 import PinData from '../../PinData.json';
+import {HeartTwoTone} from '@ant-design/icons';
 import './PinList.css';
 
 
@@ -32,7 +33,7 @@ class PinList extends Component {
     })
     return (
       <div className="pin-list">
-        <h1 className="section-title"> Pintrinite Scroll for the Kittehs </h1>
+        <div className="section-title"><HeartTwoTone twoToneColor="black"/></div>
           <div className="pin-list-filters">
             <div
               className={`pin-list-filter ${this.state.filter === 'all' ? 'is-active' : ''}`}
