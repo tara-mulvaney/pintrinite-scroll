@@ -33,18 +33,18 @@ handleDetailsClick(pin){
 }
 
 handleHeartToggle(pin) {
-    console.log('** calling handleHeartToggle **')
-    console.log('selected pin', pin)
-    // const { hearts } = this.state;
+    console.log('** calling handleFaveToggle **')
+    console.log('selected film', pin)
+    // const { faves } = this.state;
 
-    //make copy of current this.state.hearts array
+    //make copy of current this.state.faves array
 
     const newHearts = this.state.hearts.slice();
 
-    //find the index of the film in our this.state.hearts array (if it exists)
+    //find the index of the film in our this.state.faves array (if it exists)
     const pinIndex = this.state.faves.indexOf(pin);
     if(pinIndex >= 0) {
-      //it exists in the this.state.hearts array, now remove it
+      //it exists in the this.state.faves array, now remove it
       newHearts.splice(pinIndex, 1);
     } else {
       //it does not exist, add it
@@ -52,7 +52,7 @@ handleHeartToggle(pin) {
     }
     //updating state
     this.setState(prevState => ({
-      //update this.state.current to pin that was clicked
+      //update this.state.current to film that was clicked
       hearts: newHearts
     }))
     console.log('state',this.state)
@@ -70,7 +70,7 @@ handleHeartToggle(pin) {
           onDetailsClick={this.handleDetailsClick}
           />
 
-
+      
       </div>
       </div>
       )
