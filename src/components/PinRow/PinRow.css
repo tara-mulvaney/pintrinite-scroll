@@ -1,16 +1,15 @@
 .pin-summary {
   padding: 0.5em 1.5em;
-  background-color: white;
 }
 
 .pin-summary > h1 {
-  margin-bottom: 0.35em;
+  margin-bottom: 0.3em;
 }
 
 .pin-summary > p {
   font-size: 1.6em;
   line-height: 1.35;
-  font-weight: 200;
+  font-weight: 150;
   margin-top: 0;
 }
 
@@ -24,7 +23,7 @@
  box-shadow: 0 2px 2px #ccc;
  text-align: center;
  width: 30vw;
- height: 25%;
+ height: 20%;
  padding: 30px 20px 0px 20px;
  margin: 20px;
  opacity: 100;

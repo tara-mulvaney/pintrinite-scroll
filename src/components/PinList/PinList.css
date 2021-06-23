@@ -1,0 +1,114 @@
+.pin-list {
+  position: relative;
+  flex: 3 3 33.333333%;
+  height: 50%;
+  padding: 3.6em 0 0;
+  overflow-y: scroll;
+  background-color: #f0f0f0;
+}
+
+.pin-list > .section-title {
+  width: 33.333333%;
+  left: 0;
+}
+
+.section-title {
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  background-color: lightseagreen;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  font-size: 0.75em;
+  padding: 0.5em;
+  margin: 0 0 0.1em;
+  letter-spacing: 0.3em;
+  text-transform: lowercase;
+}
+
+.pin-list-filters {
+  position: fixed;
+  top: 1.6em;
+  left: 0;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  width: 33.333333%;
+}
+
+.pin-list-filter {
+  flex-basis: 50%;
+  flex-grow: 1;
+  background-color: #ccc;
+  color: white;
+  text-align: center;
+  font-size: 0.75em;
+  padding: 0.5em;
+  margin: 0 0 0.1em;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.pin-list-filter:hover {
+  background-color: hsl(177, 70%, 46%);
+}
+
+.pin-list-filter.is-active {
+  background-color: lightseagreen;
+}
+
+.section-count {
+  display: inline-block;
+  background-color: white;
+  color: black;
+  text-align: center;
+  padding: 0.25em 0.25em 0.25em 0.5em;
+  border-radius: 20%;
+  margin-left: 0.5em;
+  font-weight: bold;
+}
+
+.pin-details {
+  position: relative;
+  overflow-y: scroll;
+}
+
+.pin-details > .section-title {
+  left: 33.333333%;
+  width: 66.666666%;
+}
+
+.pin-detail {
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  overflow-y: scroll;
+  margin-bottom: 2em;
+}
+
+.pin-detail > p {
+  text-align: center;
+}
+
+.pin-detail > p > .material-icons {
+  display: block;
+  font-size: 3em;
+  margin-bottom: 0.25em;
+}
+
+.pin-detail.is-hydrated {
+  display: block;
+}
+.pin-row-fave {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  font-size: 2rem;
+  font-weight: 800;
+  padding: 0 0.2em;
+  background-color: transparent;
+  transition: all 0.1s linear;
+}

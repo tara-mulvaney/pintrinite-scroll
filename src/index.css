@@ -25,6 +25,6 @@ img {
 }
 
 img:hover {
-  background-color: black;
+  background-color: rgb(255,255,255);
   opacity: 50%;
 }
