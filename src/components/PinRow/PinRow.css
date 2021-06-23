@@ -1,0 +1,37 @@
+.pin-summary {
+  padding: 0.5em 1.5em;
+  background-color: white;
+}
+
+.pin-summary > h1 {
+  margin-bottom: 0.35em;
+}
+
+.pin-summary > p {
+  font-size: 1.6em;
+  line-height: 1.35;
+  font-weight: 200;
+  margin-top: 0;
+}
+
+.pin-row {
+ display: inline-block;
+ flex-direction: row;
+ justify-content: center;
+  /* margin: 100px 10px -30px 10px; */
+ border: 1px solid #eee;
+ border-radius: 10%;
+ box-shadow: 0 2px 2px #ccc;
+ text-align: center;
+ width: 30vw;
+ height: 25%;
+ padding: 30px 20px 0px 20px;
+ margin: 20px;
+ opacity: 100;
+ background-color: white;
+ focus: hover;
+}
+
+.pin-row:hover {
+  cursor: pointer;
+}
