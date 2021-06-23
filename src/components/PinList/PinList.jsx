@@ -13,6 +13,8 @@ class PinList extends Component {
       filter: filter
     }))
   }
+  //attempted to import InfiniteScroll in this component but have been unable to make the elements render with this method.
+  //The required attributes for this package, such as hasMore and setPage, return an error of not defined.
   render() {
     const {pins, hearts, onHeartToggle, onDetailsClick} = this.props;
 
@@ -36,6 +38,7 @@ class PinList extends Component {
               className={`pin-list-filter ${this.state.filter === 'all' ? 'is-active' : ''}`}
               onClick={() => this.handleFilterClick('all')}
             >
+
             </div>
           </div>
         {allPins}
